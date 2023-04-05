@@ -15,7 +15,7 @@ public class Program {
         System.out.println(acc2ID);*/
 
 
-        Account acc = new Account("cid03029", 50000);
+       /* Account acc = new Account("cid03029", 50000);
         Account acc2 = new Account(5432, 50000);
 
         System.out.println(acc.getId());
@@ -29,7 +29,22 @@ public class Program {
 
         print.<String>print(people);
         print.<Integer>print(numbers);
+*/
+        /*Account acc3 = new Account("cid03029", 200000);
+        Account acc4 = new Account("5432", 50000);
+*/
+        DepositAccount<Integer> depacc3 = new DepositAccount(1);
 
 
+        Account<Integer> acc4 = (Account<Integer>)depacc3;
+        System.out.println(acc4.getId() );
+
+  /*      DepositAccount depacc4 = new DepositAccount(02,"Oleg");
+        System.out.println(depacc4.getId() + ": " + depacc4.getName());*/
+       /* Transaction<Account> tran1 = new Transaction<Account>(acc3,acc4,100000);
+        tran1.execute();*/
+
+        /*tran1 = new Transaction<Account<String>>(acc3,acc4,100000);
+        tran1.execute();*/
     }
 }
