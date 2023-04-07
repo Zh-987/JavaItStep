@@ -38,7 +38,6 @@ public class Person implements Cloneable{
 
 }
 
-
 class Restrictions{
     private String name;
     public void setRestrictions(String name){
