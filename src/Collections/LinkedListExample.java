@@ -37,9 +37,9 @@ public class LinkedListExample {
         }
         LinkedList<Person> people = new LinkedList<Person>();
 
-        people.add(new Person("Talgat"));
-        people.addFirst(new Person("Andrey"));
-        people.addLast(new Person("Shynar"));
+        people.add(new Person("Talgat",12));
+        people.addFirst(new Person("Andrey",13));
+        people.addLast(new Person("Shynar",14));
         people.remove(2);
 
         for (Person person: people){

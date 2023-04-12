@@ -20,9 +20,9 @@ public class SetExample {
         countries.remove("Jordan");
 
         HashSet<Person> people = new HashSet<Person>();
-        people.add(new Person("Talgat"));
-        people.add(new Person("Andrey"));
-        people.add(new Person("Shynar"));
+        people.add(new Person("Talgat",34));
+        people.add(new Person("Andrey",44));
+        people.add(new Person("Shynar",18));
 
         for (Person person: people){
             System.out.println(person.getName());
