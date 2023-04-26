@@ -19,8 +19,8 @@ public class SerializableStreamExample {
 class Person2 implements Serializable {
     public String name;
     public int age;
-    public double height;
-    public boolean married;
+    private transient double height;
+    private transient boolean married;
 
     public Person2(String s, int n, double d, boolean b){
         this.name = s;
